@@ -14,6 +14,9 @@
         <Button Name="calculateButton" Content="_Calculate" HorizontalAlignment="Left" Height="37" Margin="327,153,0,0" VerticalAlignment="Top" Width="122" Click="calculateButton_Click"/>
         <Button Name="clearButton" Content="C_lear" HorizontalAlignment="Left" Height="34" Margin="327,209,0,0" VerticalAlignment="Top" Width="122" Click="clearButton_Click"/>
         <Button Name="closeButton" Content="Cl_ose" HorizontalAlignment="Left" Height="34" Margin="327,264,0,0" VerticalAlignment="Top" Width="122" Click="closeButton_Click"/>
+        <Label Content="Total Charge after adding &amp;#xA;the delivery charge ($25):" HorizontalAlignment="Left" Margin="18,209,0,0" VerticalAlignment="Top" RenderTransformOrigin="-2.263,-1.846" Height="69" Width="176"/>
+        <TextBlock x:Name="totalChargeTextBlock" HorizontalAlignment="Left" Margin="199,222,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="77" Height="25"/>
+
 
 
     </Grid>

@@ -34,7 +34,7 @@ namespace ProductApps
         }
 
 
-        private decimal Delivery
+        public decimal Delivery
         {
             get { return delivery; }
             set { delivery = value; }
@@ -64,6 +64,13 @@ namespace ProductApps
         public void calTotalPayment()
         {
             TotalPayment = Price * Quantity;
+        }
+
+        //Calculate the total charge with delivery fee
+        public void calTotalCharge()
+        {
+            decimal deliveryCost = 25M;
+            Delivery = TotalPayment + deliveryCost;
         }
     }
 }
