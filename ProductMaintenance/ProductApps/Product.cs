@@ -41,7 +41,7 @@ namespace ProductApps
         }
 
 
-        private decimal Wrapping
+        public decimal Wrapping
         {
             get { return wrapping; }
             set { wrapping = value; }
@@ -72,5 +72,13 @@ namespace ProductApps
             decimal deliveryCost = 25M;
             Delivery = TotalPayment + deliveryCost;
         }
+
+        //Calculate the total charge with wrapping fee
+        public void calTotalChargeWithWrapping()
+        {
+            decimal wrappingCost = 5M;
+            Wrapping = Delivery + wrappingCost;
+        }
+
     }
 }
