@@ -47,7 +47,7 @@ namespace ProductApps
             set { wrapping = value; }
         }
 
-        private decimal GST
+        public decimal GST
         {
             get { return gst; }
             set { gst = value; }
@@ -80,5 +80,10 @@ namespace ProductApps
             Wrapping = Delivery + wrappingCost;
         }
 
+        //Calculate the total charge after GST
+        public void calTotalChargeWithGST()
+        {
+            GST = Wrapping * 1.1M;
+        }
     }
 }
